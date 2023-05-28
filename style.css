@@ -739,7 +739,7 @@ header .arrow-down {
 /*Start Recipes*/
 .recipes .image {
     height: 350px;
-    background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988529/three-col-1.jpg") fixed center;
+    background: url("bg.webp") fixed center;
     background-size: cover;
 }
 /*End Recipes*/
@@ -814,7 +814,7 @@ header .arrow-down {
 
 /*Start fixed-image*/
 .fixed-image {
-    background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988533/frontpage-menu.jpg") fixed center;
+    background: url("beg2.jpg") fixed center;
     background-size: cover;
     height: 400px;
 }
@@ -1189,8 +1189,29 @@ footer .newsletter i {
     text-decoration: none;
   }
   /*new*/
-
-
-
-  
+  /* Additional CSS for responsiveness */
+  @media only screen and (max-width: 768px) {
+    /* Adjust the max-width value as needed */
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .image-container .image {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .image-container .image img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    /* CSS for rectangle blocks */
+    .image-container .image.image3,
+    .image-container .image.image4,
+    .image-container .image.image5 {
+      border-radius: 0;
+    }
+  }
 /*End Home Page Responsive*/
