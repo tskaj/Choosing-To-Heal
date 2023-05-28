@@ -38,7 +38,7 @@ p {
     line-height: 27px;
 }
 .a-CTA {
-    border-bottom: 2px solid #a96700;
+    border-bottom: 2px solid #d606c5;
     padding-bottom: 4px;
     letter-spacing: 1.5px;
     font-size: 18px;
@@ -50,10 +50,10 @@ p, .a-CTA, input, header .navigation-bar a, .copyright li, .contact .form form l
     font-family: Cabin, sans-serif;
 }
 .fa-asterisk, .a-CTA, h2, header .navigation-bar a:hover, header nav.active .navigation-bar a:hover, footer .social-media .links a:hover, .copyright .info li a, .copyright .CTA li a:hover {
-    color: #a96700;
+    color: #d606c5;
 }
 header nav .navigation-bar .underline, header .text .button button:hover, .contact .form form button:hover, .contact .text i:hover {
-    background-color: #a96700;
+    background-color: #d606c5;
 }
 header .navigation-bar ul li, header .text, .about-us .text, .reservation .text, .menu .box-model, .menu .text, .fixed-image .text, footer, .copyright, .contact .text i {
     text-align: center;
@@ -129,7 +129,7 @@ header .text .arrow .left:after, header .text .arrow .right:after, header .text 
     margin: auto;
 }
 .loader-wrap {
-    background-color: #a96700;
+    background-color:#bd39b2;
     z-index: 30;
 }
 .loader-wrap.remove {
@@ -569,8 +569,23 @@ header .text .arrow .left:after, header .text .arrow .right:after, header .text 
 header {
     height: calc(100vh - 22px);
     background-size: cover;
-    background: url("beg.jpg")  no-repeat fixed bottom;
+    background: url("new2.jpg") fixed bottom;
     padding: 20px 70px;
+}
+header nav {
+    position: fixed;
+    top: 0;
+    padding: 36px 36px 20px;
+    z-index: 20;
+}
+header nav .toggle {
+    display: none;
+    top: 26px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    z-index: 21;
 }
 header nav {
     position: fixed;
@@ -610,16 +625,16 @@ header nav .toggle .hide {
 }
 header nav .toggle span {
     display: block;
-    width: 30px;
+    width: 40px;
     height: 2px;
     border-radius: 40px;
 }
 header nav .toggle span:not(:last-of-type) {
     margin-bottom: 6px;
 }
-header nav .logo {
+header nav .logo { /*here**/
     flex-basis: 56%;
-    padding-left: 50px;
+    padding-left: 10px;
 }
 header .navigation-bar.show {
     width: 40%;
@@ -637,7 +652,7 @@ header .navigation-bar ul li {
 header .navigation-bar a {
     text-decoration: none;
     transition: all .5s;
-    font-size: 20px;
+    font-size: 16px;
 }
 header nav.active .navigation-bar a {
     color: #000;
@@ -739,7 +754,7 @@ header .arrow-down {
 /*Start Recipes*/
 .recipes .image {
     height: 350px;
-    background: url("bg.webp") fixed center;
+    background: url("first bg.jpg") fixed center;
     background-size: cover;
 }
 /*End Recipes*/
@@ -814,7 +829,7 @@ header .arrow-down {
 
 /*Start fixed-image*/
 .fixed-image {
-    background: url("beg2.jpg") fixed center;
+    background: url("new.jpg") fixed center;
     background-size: cover;
     height: 400px;
 }
@@ -1119,7 +1134,7 @@ footer .newsletter i {
     font-size: 16px;
     font-weight: 600;
     color: #fff;
-    background-color: #a96700; /* Replace 'your-theme-color' with the color from your theme */
+    background-color: #d606c5; /* Replace 'your-theme-color' with the color from your theme */
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -1128,7 +1143,7 @@ footer .newsletter i {
 }
 
 .back-button:hover {
-    background-color: #a96700; /* Replace 'your-hover-color' with the hover color from your theme */
+    background-color: #d606c5; /* Replace 'your-hover-color' with the hover color from your theme */
 }
 
 /* CSS for the image names */
@@ -1136,7 +1151,7 @@ footer .newsletter i {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
     font-weight: 600;
-    color: #a96700; /* Replace 'your-theme-color' with the color from your theme */
+    color: #d606c5; /* Replace 'your-theme-color' with the color from your theme */
     margin-top: 10px;
     text-align: center;
 }
@@ -1154,7 +1169,7 @@ footer .newsletter i {
     width: 200px; /* Adjust the width as needed */
     height: 200px; /* Adjust the height as needed */
     object-fit: cover;
-    border: 5px solid #a96700; /* Replace 'your-orange-color' with the orange color from your theme */
+    border: 5px solid #d606c5; /* Replace 'your-orange-color' with the orange color from your theme */
 }
 
 /* CSS for the image names */
@@ -1162,7 +1177,7 @@ footer .newsletter i {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
     font-weight: 600;
-    color: #a96700; /* Replace 'your-orange-color' with the orange color from your theme */
+    color: #d606c5; /* Replace 'your-orange-color' with the orange color from your theme */
     margin-top: 10px;
     text-align: center;
 }
@@ -1214,4 +1229,14 @@ footer .newsletter i {
       border-radius: 0;
     }
   }
+  /*new*/
+  @media (max-width: 768px) {
+    .logo-img {
+      display: none;
+    }
+  }
+  
+/*last*/
+
+
 /*End Home Page Responsive*/
